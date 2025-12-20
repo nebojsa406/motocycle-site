@@ -1,13 +1,16 @@
 import './App.css'
-import { Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/HomePage";
 
 function App() {
 
   return (
-    <Routes>
-      <Route index element={ <HomePage /> } />
-    </Routes>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={ <HomePage /> } />
+      </Routes>
+    </BrowserRouter>
+    
   )
 }
 
