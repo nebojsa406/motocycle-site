@@ -3,14 +3,15 @@ import { HomeBlock2 } from "../components/home_components/HomeBlock2";
 import { HomeBlock3 } from "../components/home_components/HomeBlock3";
 import { HomeBlock4 } from "../components/home_components/HomeBlock4";
 
+import "./HomePage.css"
 
 export function HomePage() {
     return (
-        <>
+        <div className="home-page">
             <HomeBlock1 />
             <HomeBlock2 />
             <HomeBlock3 />
             <HomeBlock4 />
-        </>
-    );
+        </div>
+    )
 }
