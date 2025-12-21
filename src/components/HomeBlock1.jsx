@@ -5,7 +5,7 @@ export function HomeBlock1() {
         <div>
             <img src={HeroImage1}/>
             <button>BUTTON</button>
-            <div>duvaj ga</div>
+            <div>duvaj ga nebojsa</div>
         </div>
     );
 }
