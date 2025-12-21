@@ -1,5 +1,45 @@
-.Home-Block1{
+.home-Block1{
     height: 900px;
-    background-color: aqua;
     font-size: 70px;
+    background-image: url("../../assets/home_block1/black-background.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+    
 }
+.hero-img {
+    width: 70%;
+    height: 80%;
+}
+
+.scroll-left-btn, .scroll-right-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    background-color: transparent;
+    border: none;
+    outline: 2px solid white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.scroll-left-btn{
+    left: 5%;
+}
+.scroll-right-btn {
+    right: 5%;
+}
+
