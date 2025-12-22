@@ -1,17 +1,28 @@
+.category-top-txt{
+    text-align: center;
+    padding-top: 130px;
 
+    color: #FBFCFC;
+    font-size: 30px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
 
 .categorys-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
+    margin-bottom: 80px;
 }
 
 .category-left{
     background-color: #1B1C1E;
-    height: 650px;
-    width: 75%;
-    margin: 70px;
+    height: 450px;
+    width: 80%;
+    margin-bottom: 80px;
 
     border-color: #4F615A;
     border-style: solid;
@@ -27,9 +38,9 @@
 .category-right{
     background-color: #1B1C1E;
     border-color: 4F615A;
-    height: 650px;
-    width: 75%;
-    margin: 70px;
+    height: 450px;
+    width: 80%;
+    margin-bottom: 100px;
 
     border-color: #4F615A;
     border-style: solid;
@@ -43,32 +54,58 @@
 }
 
 .category-img{
-    height: 80%;
+    height: 85%;
     
 }
 
+.txt-side{
+    height: 100%;
+    margin-left: 50px;
+
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    flex-direction: column;
+
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+
 .category-title{
     color: #FBFCFC;
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    margin-top: 25px;
     
 }
 
 .category-txt{
-    
-    font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: -40px;
+    font-size: 30px;
     color: #808384;
+    border-radius: 30px;
 }
 
-.txt-side{
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    margin-left: 90px;
-    margin-right: 40px;
-    margin-bottom: 100px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.75);
+.shop-button{
+    width: 250px;
+    height: 60px;
+    background-color: #091110;
+    margin-bottom: 35px;
+    
+    color: #FBFCFC;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    border-color: #81B6A4;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    box-shadow: 1px 6px 12px 1px #93CFBA;
 }

@@ -5,13 +5,7 @@ import gear from "../../assets/home_block2/category-gear.png"
 import parts from "../../assets/home_block2/category-parts.png"
 
 
-
-export function HomeBlock2() {
-    const txt = `mooooootori mooooootori moootori moooootori motori moooootori mooooootori mooooootori moootori moooootori motori moooootori 
-    mooooootori mooooootori moootori moooootori motori moooootori mooooootori mooooootori moootori moooootori motori moooootori
-    mooooootori mooooootori moootori moooootori motori moooootori mooooootori mooooootori moootori `
-
-    function Category({ txt, img, side, name }) {
+function Category({ txt, img, side, name }) {
 
         if(side=="R") {
             return (
@@ -55,8 +49,15 @@ export function HomeBlock2() {
         
     }
 
+
+export function HomeBlock2() {
+
+    const txt = `mooooootori moooootori moootori mooootori motori mooootori mooootori moootori moootori moooootori motori moooootori 
+    mooooootori mooooootori moootori moooootori motori moooootori mooooootori mooooootori moootori moooootori`
+
     return (
         <div className="Home-Block2">
+            <div className="category-top-txt"> SHOP BY CATEGORY</div>
             <div className="categorys-container">
                 
                 <Category txt={txt} name="MOTOR" side="L" img={motor}/>
