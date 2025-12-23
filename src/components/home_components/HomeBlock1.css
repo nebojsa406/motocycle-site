@@ -10,13 +10,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    
     
     
 }
 .hero-img {
     width: 70%;
     height: 80%;
+    overflow: hidden;
 }
 
 .scroll-left-btn, .scroll-right-btn{
@@ -42,4 +43,11 @@
 .scroll-right-btn {
     right: 5%;
 }
+.shop-button-wrapper {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
