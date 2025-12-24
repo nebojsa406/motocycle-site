@@ -3,6 +3,7 @@ import "./HomeBlock2.css";
 import motor from "../../assets/home_block2/category-motor.png"
 import gear from "../../assets/home_block2/category-gear.png"
 import parts from "../../assets/home_block2/category-parts.png"
+import accessories from "../../assets/home_block2/category-accessories.png"
 
 
 function Category({ txt, img, side, name }) {
@@ -63,7 +64,7 @@ export function HomeBlock2() {
                 <Category txt={txt} name="MOTOR" side="L" img={motor}/>
                 <Category txt={txt} name="GEAR" side="R" img={gear}/>
                 <Category txt={txt} name="PARTS" side="L" img={parts}/>
-                <Category txt={txt} name="MOTOR" side="R" img={motor}/>
+                <Category txt={txt} name="ACCESSORIES" side="R" img={accessories}/>
             
             </div>
         </div>
