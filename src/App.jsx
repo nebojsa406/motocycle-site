@@ -8,6 +8,7 @@ import { AccessoriesPage } from "./pages/AccessoriesPage";
 
 import { UserPage } from "./pages/UserPage";
 import { CartPage } from "./pages/CartPage";
+import { ItemPage } from "./pages/ItemPage";
 
 import { Header } from './components/Header';
 
@@ -27,6 +28,7 @@ function App() {
 
           <Route path='/user' element={ <UserPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
+          <Route path='/item' element={ <ItemPage /> } />
         </Routes>
       </BrowserRouter>
     </>

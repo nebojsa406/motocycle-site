@@ -13,36 +13,7 @@ import gear4 from "../../assets/home_block3/gear-pants.png"
 import gear5 from "../../assets/home_block3/gear-boots.png"
 import gear6 from "../../assets/home_block3/gear-hoodie.png"
 
-function ItemCards( {img, name, price} ) {
-
-    return (
-        <div className="card">
-            <div className="img-container">
-
-                <img className="card-img" src={img}/>
-
-            </div>
-
-            
-
-            <div className="txt-container">
-
-                <div className="bike-name"> {name} </div>
-
-                <div className="bike-price"> ${price} </div>
-
-                <div className="button-container">
-
-                    <button className="card-button"> add </button>
-
-                </div>
-                
-
-            </div>
-
-        </div>
-    )
-}
+import ItemCard from "../ItemCard.jsx"
 
 
 export function HomeBlock3() {
@@ -54,35 +25,35 @@ export function HomeBlock3() {
 
             <div className="row">
 
-                <ItemCards name={"BMW S1000RR"} price={"10 000"} img={motor1} />
-                <ItemCards name={"CBR1000RR"} price={"10 000"} img={motor2} />
-                <ItemCards name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
-                <ItemCards name={"NINJA-ZX-10R"} price={"10 000"} img={motor4} />
-                <ItemCards name={"yamaha-R1"} price={"10 000"} img={motor5} />
-                <ItemCards name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
-                <ItemCards name={"BMW S1000RR"} price={"10 000"} img={motor1} />
-                <ItemCards name={"CBR1000RR"} price={"10 000"} img={motor2} />
-                <ItemCards name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
-                <ItemCards name={"NINJA-ZX-10R"} price={"10 000"} img={motor4} />
-                <ItemCards name={"yamaha-R1"} price={"10 000"} img={motor5} />
-                <ItemCards name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
+                <ItemCard name={"BMW S1000RR"} price={"10 000"} img={motor1} />
+                <ItemCard name={"CBR1000RR"} price={"10 000"} img={motor2} />
+                <ItemCard name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
+                <ItemCard name={"NINJA-ZX-10R"} price={"10 000"} img={motor4} />
+                <ItemCard name={"yamaha-R1"} price={"10 000"} img={motor5} />
+                <ItemCard name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
+                <ItemCard name={"BMW S1000RR"} price={"10 000"} img={motor1} />
+                <ItemCard name={"CBR1000RR"} price={"10 000"} img={motor2} />
+                <ItemCard name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
+                <ItemCard name={"NINJA-ZX-10R"} price={"10 000"} img={motor4} />
+                <ItemCard name={"yamaha-R1"} price={"10 000"} img={motor5} />
+                <ItemCard name={"kawasaki-H2R"} price={"10 000"} img={motor3} />
 
             </div>
 
             <div className="row">
 
-                <ItemCards name={"helmet"} price={"1000"} img={gear1} />
-                <ItemCards name={"chest"} price={"1000"} img={gear2} />
-                <ItemCards name={"gloves"} price={"1000"} img={gear3} />
-                <ItemCards name={"legs"} price={"1000"} img={gear4} />
-                <ItemCards name={"boots"} price={"1000"} img={gear5} />
-                <ItemCards name={"hoodie"} price={"1000"} img={gear6} />
-                <ItemCards name={"helmet"} price={"1000"} img={gear1} />
-                <ItemCards name={"chest"} price={"1000"} img={gear2} />
-                <ItemCards name={"gloves"} price={"1000"} img={gear3} />
-                <ItemCards name={"legs"} price={"1000"} img={gear4} />
-                <ItemCards name={"boots"} price={"1000"} img={gear5} />
-                <ItemCards name={"hoodie"} price={"1000"} img={gear6} />
+                <ItemCard name={"helmet"} price={"1000"} img={gear1} />
+                <ItemCard name={"chest"} price={"1000"} img={gear2} />
+                <ItemCard name={"gloves"} price={"1000"} img={gear3} />
+                <ItemCard name={"legs"} price={"1000"} img={gear4} />
+                <ItemCard name={"boots"} price={"1000"} img={gear5} />
+                <ItemCard name={"hoodie"} price={"1000"} img={gear6} />
+                <ItemCard name={"helmet"} price={"1000"} img={gear1} />
+                <ItemCard name={"chest"} price={"1000"} img={gear2} />
+                <ItemCard name={"gloves"} price={"1000"} img={gear3} />
+                <ItemCard name={"legs"} price={"1000"} img={gear4} />
+                <ItemCard name={"boots"} price={"1000"} img={gear5} />
+                <ItemCard name={"hoodie"} price={"1000"} img={gear6} />
 
             </div>
         </div>
