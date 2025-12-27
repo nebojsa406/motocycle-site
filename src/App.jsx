@@ -21,14 +21,17 @@ function App() {
 
         <Routes>
           <Route path='/' element={ <HomePage /> } />
+
           <Route path='/motorcycles' element={ <MotorcyclePage /> } />
           <Route path='/gear' element={ <GearPage /> } />
           <Route path='/parts' element={ <PartsPage /> } />
           <Route path='/accessories' element={ <AccessoriesPage /> } />
 
+          <Route path="/:category/:id" element={<ItemPage />} />
+
           <Route path='/user' element={ <UserPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
-          <Route path='/item' element={ <ItemPage /> } />
+
         </Routes>
       </BrowserRouter>
     </>
