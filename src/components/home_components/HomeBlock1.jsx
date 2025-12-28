@@ -21,37 +21,37 @@ function HeroNavDots({dotAmount, intImg}) {
 }
 
 function HeroTitle({imgNum}) {
-    const heroTitles = ["chase the wind", "roads can be harsh", "whatever your bike needs", "Be ready for obstacles"];
+    const heroTitles = ["CHASE THE WIND", "ROADS CAN BE HARSH", "WHATEVER YOU'R BIKE NEEDS", "BE READY FOR OBSTACLES"];
 
-    if (heroTitles[imgNum] === "roads can be harsh") {
+    if (heroTitles[imgNum] === "ROADS CAN BE HARSH") {
         return (
             <div style={{
                 position: "absolute",
                 top: "7%",
                 color: "rgba(252, 252, 252, 1)",
-                fontSize: "140px"
+                fontSize: "120px"
             }}>
                 {heroTitles[imgNum]}
             </div>
         );
-    } else if (heroTitles[imgNum] === "whatever your bike needs") {
+    } else if (heroTitles[imgNum] === "WHATEVER YOU'R BIKE NEEDS") {
         return (
             <div style={{
                 position: "absolute",
                 top: "7%",
                 color: "rgba(255, 255, 255, 1)",
-                fontSize: "140px"
+                fontSize: "120px"
             }}>
                 {heroTitles[imgNum]}
             </div>
         );
-    } else if (heroTitles[imgNum] === "Be ready for obstacles") {
+    } else if (heroTitles[imgNum] === "BE READY FOR OBSTACLES") {
         return (
             <div style={{
                 position: "absolute",
                 top: "7%",
                 color: "rgba(255, 255, 255, 1)",
-                fontSize: "140px"
+                fontSize: "120px"
             }}>
                 {heroTitles[imgNum]}
             </div>
