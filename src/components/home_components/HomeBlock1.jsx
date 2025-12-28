@@ -29,7 +29,7 @@ function HeroTitle({imgNum}) {
                 position: "absolute",
                 top: "7%",
                 color: "rgba(252, 252, 252, 1)",
-                fontSize: "120px"
+                fontSize: "100px"
             }}>
                 {heroTitles[imgNum]}
             </div>
@@ -40,7 +40,7 @@ function HeroTitle({imgNum}) {
                 position: "absolute",
                 top: "7%",
                 color: "rgba(255, 255, 255, 1)",
-                fontSize: "120px"
+                fontSize: "100px"
             }}>
                 {heroTitles[imgNum]}
             </div>
@@ -51,7 +51,7 @@ function HeroTitle({imgNum}) {
                 position: "absolute",
                 top: "7%",
                 color: "rgba(255, 255, 255, 1)",
-                fontSize: "120px"
+                fontSize: "100px"
             }}>
                 {heroTitles[imgNum]}
             </div>
