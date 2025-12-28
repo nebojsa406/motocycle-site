@@ -24,13 +24,6 @@
     object-position: bottom center;
 }
 
-.hero-title-img1 {
-    position: absolute;
-    top: 10%;
-    color: rgba(0, 0, 0,0.6);
-
-}
-
 .scroll-left-btn, .scroll-right-btn{
     position: absolute;
     top: 50%;
