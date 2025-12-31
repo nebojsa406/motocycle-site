@@ -1,60 +1,168 @@
 .item-page{
-
-    color: silver;
+    color: #FBFCFC;
 }
 
 .item-card-container {
-    height: 750px;
+    background-color: rgba(2, 2, 2, 0.308);
+    height: 800px;
+    width: 1400px;
     margin-top: 100px;
     display: flex;
     flex-direction: row;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgba(128, 128, 128, 0.452);
+
+    padding: 15px;
+
 
 }
 
 .left-side{
     height: 100%;
-    width: 50%;
+    width: 60%;
+    padding-right: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.left-side-mid-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+.img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 90%;
+    width: 85%;
+}
+
+.mid-buttons-container{
+    width: 220px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+
+.mid-button{
+    height: 60px;
+    width: 60px;
+    border-radius: 999px;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: 50px;
+    color: whitesmoke;
 }
 
 
+.small-images-container{
+    height: 100%;
+    width: 150px;
+    padding-top: 10px;
+
+    background: linear-gradient(
+        135deg,
+        rgba(39, 39, 39, 0.062),
+        rgba(78, 78, 78, 0.151),
+        rgba(36, 36, 36, 0.103)
+    );
+    border-radius: 15px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(128, 128, 128, 0.096);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow-y: scroll;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    row-gap: 10px;
+}
+
+.small-img-container{
+    flex-shrink: 0;
+    background: linear-gradient(
+        5deg,
+        rgba(80, 79, 79, 0.808),
+        rgba(36, 36, 36, 0.151),
+        rgba(65, 64, 64, 0.432)
+    );
+    width: 90%;
+    height: 180px;
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .right-side{
+    background: linear-gradient(
+        135deg,
+        rgba(22, 22, 22, 0.062),
+        rgba(78, 78, 78, 0.151),
+        rgba(0, 0, 0, 0.103)
+    );
+
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgba(128, 128, 128, 0.473);
 }
 
 .item-name{
     letter-spacing: 0.10em;
-    font-size: 70px;
+    font-size: 50px;
     margin-top: 40px;
 
 }
 
 .item-price{
-    font-size: 80px;
+    font-size: 60px;
+    margin-top: 10px;
     margin-bottom: 200px;
-    color: white;
+    color: rgba(120, 255, 220, 0.9);
 }
 
 .mini-description{
     margin-bottom: 50px;
     color: white;
 
+    height: 100%;
     font-size: 20px;
     letter-spacing: 0.07em;
 }
@@ -67,4 +175,44 @@
     width: 350px;
     margin-bottom: 20px;
     border-radius: 30px;
+}
+
+
+
+
+.info-container{
+    width: 1400px;
+    height: 1000px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.info-button{
+    background-color: rgba(0, 0, 0, 0.034);
+    width: 1000px;
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: whitesmoke;
+    font-size: 25px;
+    text-align: start;
+    
+    border-color: #FBFCFC;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    
+}
+
+.info-button-txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

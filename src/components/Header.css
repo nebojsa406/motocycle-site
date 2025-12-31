@@ -10,8 +10,13 @@
     width: 100%;
     z-index: 100;
 
-    background-color:#0F0F11;
-    color:#808384;
+    background: linear-gradient(
+        135deg,
+        rgb(8, 8, 8),
+        rgba(20, 27, 25, 0.999),
+        rgb(8, 8, 8)
+    );
+    color:#8a8a8a;
 
     border-bottom:2px solid transparent;
 
@@ -46,7 +51,7 @@
 .category-link{
   text-transform: uppercase;
   text-decoration: none;
-  color: #808384;
+  color: #d6d6d6;
 }
 
 .category-link:hover{
