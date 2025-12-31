@@ -1,57 +1,53 @@
-.gear-page{
-    color: gray;
-}
-
-.top-category-name{
-    width: 100%;
+.top-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: silver;
-    font-size: 40px;
-
-    margin-top: 170px;
+    flex-direction: column;
 }
 
-.filter-sort-container{
+.page-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: lightslategray;
+    font-size: 60px;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+
+    padding-top: 80px;
+}
+
+.filter-container{
     display: flex;
     flex-direction: row;
-    justify-content: right;
     align-items: center;
+    justify-content: end;
 
-    margin-top: 60px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sort-button{
+    border: none;
+    background-color: transparent;
+
+    color: silver;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+
+    padding-left: 30px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 15px;
+
     margin-left: 10%;
     margin-right: 10%;
-    height: 50px;
-    padding-right: 50px;
-    font-size: 25px;    
-}
-
-.filter-button{
-    margin-right: 20px;
-    background-color: transparent;
-    border: none;
-}
-
-.filter-button-img{
-    width: 35px;
-}
-
-.sorting{
-    letter-spacing: 0.12em;
-}
-
-
-.card-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding-left: 8%;
-    padding-right: 8%;
 }

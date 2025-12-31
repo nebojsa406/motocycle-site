@@ -1,8 +1,8 @@
-import motor1 from "../assets/home_block3/BMW-S1000RR.png"
-import motor2 from "../assets/home_block3/honda-CBR1000RR.png"
-import motor3 from "../assets/home_block3/kawasaki-H2R.png"
-import motor4 from "../assets/home_block3/kawasaki-NINJA-ZX-10R.png"
-import motor5 from "../assets/home_block3/yamaha-R1.png"
+import motor1 from "../assets/motorcycle_category/BMW-S1000RR.png"
+import motor2 from "../assets/motorcycle_category/honda-CBR1000RR.png"
+import motor3 from "../assets/motorcycle_category/kawasaki-H2R.png"
+import motor4 from "../assets/motorcycle_category/kawasaki-NINJA-ZX-10R.png"
+import motor5 from "../assets/motorcycle_category/yamaha-R1.png"
 
 export const motorcycleData = [
     {

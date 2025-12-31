@@ -20,12 +20,12 @@ export default function ItemCard( {id, img, name, price, category} ) {
 
                 <div className="card-txt-container">
 
-                    <div className="card-bike-name"> {name} </div>
+                    <div className="card-name"> {name} </div>
 
-                    <div className="card-bike-price"> ${price} </div>
+                    <div className="card-price"> ${price} </div>
 
                     <div className="cart-link-container">
-                        <Link className="cart-link" to="/cart"> <img className="cart-link-img" src={addToCartIcon} /> </Link>
+                        <Link className="cart-button" to="/cart"> <img className="cart-button-img" src={addToCartIcon} /> </Link>
                     </div>
                     
                 </div>

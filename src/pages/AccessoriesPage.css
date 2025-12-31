@@ -1,4 +1,54 @@
-.accessories-page{
-    height: 1000px;
-    background-color: rgb(24, 196, 196);
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.page-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: lightslategray;
+    font-size: 60px;
+    font-size: 52px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+
+    padding-top: 80px;
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.sort-button{
+    border: none;
+    background-color: transparent;
+
+    color: silver;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+
+    padding-left: 30px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 15px;
+
+    margin-left: 10%;
+    margin-right: 10%;
 }

@@ -1,29 +1,28 @@
 import "./GearPage.css"
-
-import ItemCard from "../components/ItemCard.jsx"
-import { gearData } from "../data/gearData.js"
-
-import filterIcon from "../assets/filter-icon.png"
+import { gearData } from "../data/gearData"
+import ItemCard from "../components/ItemCard"
 
 export function GearPage() {
     return (
         <div className="gear-page">
 
-            <div className="top-category-name"> motorcycles </div>
+            <div className="top-container">
 
-            <div className="filter-sort-container">
+                <div className="page-name"> ACCESSORIES</div>
 
-                <button className="filter-button">
-                    <img className="filter-button-img" src={filterIcon} />
-                </button>
+                <div className="filter-container">
 
-                <div className="sorting"> sort by </div>
+                    <button className="sort-button"> filter </button>
+
+                    <button className="sort-button"> sort by</button>
+
+                </div>
 
             </div>
 
 
-            <div className="card-container">
-                
+            <div className="grid">
+
                 {gearData.map(item => (
                     <ItemCard 
                         key={item.id}
@@ -36,6 +35,7 @@ export function GearPage() {
                 ))}
 
             </div>
+
         </div>
     )
 }

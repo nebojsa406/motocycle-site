@@ -1,9 +1,9 @@
-import gear1 from "../assets/home_block3/gear-boots.png"
-import gear2 from "../assets/home_block3/gear-chest.png"
-import gear3 from "../assets/home_block3/gear-gloves.png"
-import gear4 from "../assets/home_block3/gear-helmet.png"
-import gear5 from "../assets/home_block3/gear-hoodie.png"
-import gear6 from "../assets/home_block3/gear-pants.png"
+import gear1 from "../assets/gear_category/gear-boots.png"
+import gear2 from "../assets/gear_category/gear-chest.png"
+import gear3 from "../assets/gear_category/gear-gloves.png"
+import gear4 from "../assets/gear_category/gear-helmet.png"
+import gear5 from "../assets/gear_category/gear-hoodie.png"
+import gear6 from "../assets/gear_category/gear-pants.png"
 
 export const gearData = [
   {
