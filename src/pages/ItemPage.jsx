@@ -1,9 +1,15 @@
 import "./ItemPage.css"
 
+import { useState } from "react";
+
 import { useParams } from "react-router-dom";
 import { dataMap } from "../data/allData";
 
 export function ItemPage() {
+  const [showReviews, setShowReviews] = useState(false);
+  const [showDescription, setShowDescription] = useState(false);
+  const [showDetails, setShowDetails] = useState(false);
+
   const { category, id } = useParams();
 
   const items = dataMap[category];
@@ -58,27 +64,57 @@ export function ItemPage() {
         </div>
 
         <div className="info-container">
-          <button className="info-button">
-            <div className="info-button-txt">
-              <div className="info-button-left"> Review (0) </div>
-              <div className="info-button-right"> V </div>
-            </div>
-          </button>
-          <button className="info-button">
-            <div className="info-button-txt">
-              <div className="info-button-left"> Description </div>
-              <div className="info-button-right"> V </div>
-            </div>
-          </button>
-          <button className="info-button">
-            <div className="info-button-txt">
-              <div className="info-button-left"> Details </div>
-              <div className="info-button-right"> V </div>
-            </div>
-          </button>
+
+          <div className="review-section">
+
+            <button onClick={() => setShowReviews(prev => !prev)} className="info-button">
+              <div className="info-button-txt">
+                <div className="info-button-left"> Review (0) </div>
+                <div className="info-button-right"> {showReviews ? "/\\" : "\\/"} </div>
+              </div>
+            </button>
+
+            {showReviews&&<TestComponet />}
+
+          </div>
+          
+          <div className="description-section">
+
+            <button onClick={() => setShowDescription(prev => !prev)} className="info-button">
+              <div className="info-button-txt">
+                <div className="info-button-left"> Description </div>
+                <div className="info-button-right"> {showDescription ? "/\\" : "\\/"} </div>
+              </div>
+            </button>
+
+            {showDescription&&<TestComponet />}
+
+          </div>
+          
+
+          <div className="details-section">
+
+            <button onClick={() => setShowDetails(prev => !prev)} className="info-button">
+              <div className="info-button-txt">
+                <div className="info-button-left"> Details </div>
+                <div className="info-button-right"> {showDetails ? "/\\" : "\\/"} </div>
+              </div>
+            </button>
+
+            {showDetails&&<TestComponet />}
+
+          </div>
 
         </div>
       
     </div>
   );
+}
+
+function TestComponet() {
+  return (
+    <div className="test">
+
+    </div>
+  )
 }

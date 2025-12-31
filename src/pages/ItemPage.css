@@ -40,6 +40,7 @@
     align-items: center;
 
     height: 100%;
+    width: 100%;
 }
 
 .img-container{
@@ -78,7 +79,7 @@
 
 .small-images-container{
     height: 100%;
-    width: 150px;
+    width: 160px;
     padding-top: 10px;
 
     background: linear-gradient(
@@ -182,8 +183,9 @@
 
 .info-container{
     width: 1400px;
-    height: 1000px;
+
     margin-top: 150px;
+    margin-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -211,8 +213,38 @@
     
 }
 
+.info-button:hover{
+    cursor: pointer;
+    color: white;
+    border-color: white;
+}
+
 .info-button-txt{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.review-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.description-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-section{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.test{
+    min-height: 400px;
+    background-color: transparent;
 }
