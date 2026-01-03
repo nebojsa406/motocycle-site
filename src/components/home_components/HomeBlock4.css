@@ -1,5 +1,167 @@
 .Home-Block4{
-    height: 400px;
-    background-color: pink;
-    font-size: 70px;
+    height: 300px;
+    padding-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;
+
+    border-top: solid;
+    border-color: white;
+    border-width: 2px;
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0) 0%,
+        rgb(55, 55, 55) 40%,
+        rgb(55, 55, 55) 70%,
+        rgb(0, 0, 0) 100%
+    );
+
 }
+
+.rider-supply-container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: stretch;
+}
+.rider-supply-container h1, .rider-supply-container p {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+.footer-img-container {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.footer-img {
+    height: 90%;
+    width: auto;
+    display: block;
+}
+.left-p-container {
+    color: white;
+}
+.media-icons-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: flex-start;
+    padding-left: 30px;
+    gap: 10px;
+}
+.facebook-img {
+    height: 33px;
+    width: auto;
+}
+.instagram-img {
+    height: 30px;
+    width: auto;
+}
+.twitter-img{
+    height: 28px;
+    width: auto;
+}
+.youtube-img {
+    height: 27px;
+    width: auto;
+}
+
+
+.quick-link-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: stretch;
+}
+.quick-link-container h1, .quick-link-container a {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+.quick-link-container::before, .quick-link-container::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0%;
+
+    background: linear-gradient(to bottom,
+        transparent 0%,
+        rgba(120, 255, 220, 0.8) 40%,
+        rgba(120, 255, 220, 0.8) 60%,
+        transparent 100%
+    );
+}
+.quick-link-container::before{
+    left: 0.5px;
+}
+.quick-link-container::after {
+    right: 0.5px;
+}
+
+.quick-link-container h1 {
+    color: white;
+}
+.quick-link-container a {
+    text-decoration: none;
+    color: rgb(120, 255, 220);
+}
+
+.support-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    align-items: stretch;
+}
+.support-container h1, .support-container a {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+.support-container h1 {
+    color: white;
+}
+.support-container a {
+    text-decoration: none;
+    color: rgb(120, 255, 220);
+}
+.h1-container {
+    display: flex;
+    justify-content: center;
+}
+.p-container, .left-p-container {
+    flex: 1;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.p-container a{
+    display: block;
+    margin-bottom: 10px;
+}
+.p-container p {
+    margin-bottom: 10px;
+}
+
