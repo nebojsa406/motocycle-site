@@ -28,9 +28,21 @@ export function Header() {
 
                 <img className="icon" src={searchIcon} />
 
-                <Link className="icon" to="/user">
-                    <img className="icon" src={userIcon} />
-                </Link>
+                <div className="user-icon-wrapper">
+
+                    <Link className="icon" to="/user">
+                        <img className="icon" src={userIcon} />
+                    </Link>
+
+                    <div className="user-popout">
+                        <div className="user-name">Name Surname</div>
+                        <Link className="popout-link" to="/user">Profile</Link>
+                        <Link className="popout-link" to="/orders">Orders</Link>
+                        <Link className="popout-link" to="/logout">Logout</Link>
+                    </div>
+
+                </div>
+                
 
                 <Link className="icon" to="/cart">
                     <img className="icon" src={cartIcon} />

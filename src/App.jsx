@@ -9,6 +9,7 @@ import { AccessoriesPage } from "./pages/AccessoriesPage";
 import { UserPage } from "./pages/UserPage";
 import { CartPage } from "./pages/CartPage";
 import { ItemPage } from "./pages/ItemPage";
+import { OrdersPage } from './pages/OrdersPage';
 
 import { Header } from './components/Header';
 import { TempFooter } from './components/TempFooter';
@@ -16,6 +17,7 @@ import { TempFooter } from './components/TempFooter';
 
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -49,6 +51,7 @@ function App() {
 
           <Route path='/user' element={ <UserPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
+          <Route path='/orders' element={ <OrdersPage /> } />
 
         </Routes>
 
