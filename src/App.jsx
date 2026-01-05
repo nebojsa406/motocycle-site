@@ -11,12 +11,30 @@ import { CartPage } from "./pages/CartPage";
 import { ItemPage } from "./pages/ItemPage";
 
 import { Header } from './components/Header';
+import { TempFooter } from './components/TempFooter';
+
+
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname]);
+
+  return null;
+}
+
+
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Header />
 
         <Routes>
@@ -33,6 +51,8 @@ function App() {
           <Route path='/cart' element={ <CartPage /> } />
 
         </Routes>
+
+        <TempFooter />
       </BrowserRouter>
     </>
     

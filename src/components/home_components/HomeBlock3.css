@@ -30,16 +30,15 @@
     overflow-x: auto;
     overflow-y: hidden;
 
-    padding: 20px;          /* 👈 fixed padding */
-    max-width: 100vw;       /* 👈 clamp to viewport */
-    box-sizing: border-box; /* 👈 critical */
+    padding: 20px;        
+    max-width: 100vw;    
+    box-sizing: border-box; 
 
     scroll-behavior: smooth;
 
     margin-bottom: 100px;
 }
 
-/* optional scrollbar styling */
 .horizontal-scroll::-webkit-scrollbar {
     height: 8px;
 }

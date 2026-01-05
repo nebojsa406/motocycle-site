@@ -1,9 +1,13 @@
 import "./ItemPage.css"
 
 import { useState } from "react";
-
 import { useParams } from "react-router-dom";
 import { dataMap } from "../data/allData";
+
+import { ReviewCard } from "../components/ReviewCard";
+import { gearData } from "../data/gearData";
+import ItemCard from "../components/ItemCard";
+import { accessoriesData } from "../data/accessoriesData";
 
 export function ItemPage() {
   const [showReviews, setShowReviews] = useState(false);
@@ -16,6 +20,7 @@ export function ItemPage() {
   const item = items?.find(item => item.id === id);
 
   if (!item) return <h2>Item not found</h2>;
+
 
   return (
     <div className="item-page">
@@ -63,18 +68,23 @@ export function ItemPage() {
 
         </div>
 
+
+
+
+        
+
         <div className="info-container">
 
           <div className="review-section">
 
             <button onClick={() => setShowReviews(prev => !prev)} className="info-button">
               <div className="info-button-txt">
-                <div className="info-button-left"> Review (0) </div>
+                <div className="info-button-left"> Review (?) </div>
                 <div className="info-button-right"> {showReviews ? "/\\" : "\\/"} </div>
               </div>
             </button>
 
-            {showReviews&&<TestComponet />}
+            {showReviews&&<ReviewsComponet />}
 
           </div>
           
@@ -87,7 +97,7 @@ export function ItemPage() {
               </div>
             </button>
 
-            {showDescription&&<TestComponet />}
+            {showDescription&&<DescriptionComponent />}
 
           </div>
           
@@ -101,9 +111,43 @@ export function ItemPage() {
               </div>
             </button>
 
-            {showDetails&&<TestComponet />}
+            {showDetails&&<DescriptionComponent />}
 
           </div>
+
+        </div>
+
+        <div className="scroll-top-txt">
+          You might also like
+        </div>
+
+        <div className="horizontal-scroll">
+        
+            {gearData.map(item => (
+                <ItemCard 
+                    key={item.id}
+                    id={item.id}
+                    img={item.img}
+                    name={item.name}
+                    price={item.price}
+                    category={item.category}
+                />
+            ))}
+
+        </div>
+
+        <div className="horizontal-scroll">
+        
+            {accessoriesData.map(item => (
+                <ItemCard 
+                    key={item.id}
+                    id={item.id}
+                    img={item.img}
+                    name={item.name}
+                    price={item.price}
+                    category={item.category}
+                />
+            ))}
 
         </div>
       
@@ -111,9 +155,52 @@ export function ItemPage() {
   );
 }
 
-function TestComponet() {
+function ReviewsComponet() {
   return (
-    <div className="test">
+    <div className="reviews">
+      <div className="reviews-container">
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+      </div>
+
+      <div className="add-review">
+
+        <input className="review-input" />
+
+        <button className="add-review-button"> + </button>
+
+      </div>
+      
+    </div>
+  )
+}
+
+function DescriptionComponent() {
+  return(
+    <div className="description">
+
+      lalalalalalala lalallaaaaaaaaaaaaaaalaaa aaaa alalalalaaaaaalalaaaaaaaaal  alalalalalalaaaaaaaaaal lllllllllllllll lllllllllaaaaaaaaaaa aaalllllalalalalalaaaaaa
+      alalallaaaaa aaalala lalalalallaaaaa aaaaaaaaaaaaa laaaaaaaaalalal laaaaaaa aaalalaaaaaaaaala alalalalalala aaaaaaaaalal lllllllllllaalalaaaaa aaaalaalalalalalalaaaaaa
+      aaaaaalalaa aaaaaaalaalalalalalalaaa aaaaaaalalllllalala lalalallaa aaaaaaaallllllla lalalalalalalla aaaaaaaaaalalalalallaaaaaaaaaaaa aaalaaaaalalalalla
+      lalalalalalala lalallaaaaaaaaaaaaaaalaaa aaaa alalalalaaaaaalalaaaaaaaaal  alalalalalalaaaaaaaaaal lllllllllllllll lllllllllaaaaaaaaaaa aaalllllalalalalalaaaaaa
+      alalallaaaaa aaalala lalalalallaaaaa aaaaaaaaaaaaa laaaaaaaaalalal laaaaaaa aaalalaaaaaaaaala alalalalalala aaaaaaaaalal lllllllllllaalalaaaaa aaaalaalalalalalalaaaaaa
+      lalalalalalala lalallaaaaaaaaaaaaaaalaaa aaaa alalalalaaaaaalalaaaaaaaaal  alalalalalalaaaaaaaaaal lllllllllllllll lllllllllaaaaaaaaaaa aaalllllalalalalalaaaaaa
+      alalallaaaaa aaalala lalalalallaaaaa aaaaaaaaaaaaa laaaaaaaaalalal laaaaaaa aaalalaaaaaaaaala alalalalalala aaaaaaaaalal lllllllllllaalalaaaaa aaaalaalalalalalalaaaaaa
+      aaaaaalalaa aaaaaaalaalalalalalalaaa aaaaaaalalllllalala lalalallaa aaaaaaaallllllla lalalalalalalla aaaaaaaaaalalalalallaaaaaaaaaaaa aaalaaaaalalalall
+      aaaaaalalaa aaaaaaalaalalalalalalaaa aaaaaaalalllllalala lalalallaa aaaaaaaallllllla lalalalalalalla aaaaaaaaaalalalalallaaaaaaaaaaaa aaalaaaaalalalalla
+ 
 
     </div>
   )
