@@ -17,10 +17,10 @@ export function Header() {
 
             <div className="mid-container">
                 
-                <Link className="category-link" to="/motorcycles"> bikes </Link>
-                <Link className="category-link" to="/gear"> gear </Link>
-                <Link className="category-link" to="/parts"> parts </Link>
-                <Link className="category-link" to="/accessories"> accessories </Link>
+                <Link className="category-link" to="/motorcycles">motorcycles</Link>
+                <Link className="category-link" to="/gear">gear</Link>
+                <Link className="category-link" to="/parts">parts</Link>
+                <Link className="category-link" to="/accessories">accessories</Link>
                 
             </div>
 

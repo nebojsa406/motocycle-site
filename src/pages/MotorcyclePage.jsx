@@ -8,7 +8,7 @@ export function MotorcyclePage() {
 
             <div className="top-container">
 
-                <div className="page-name"> ACCESSORIES</div>
+                <div className="page-name">MOTORCYCLES</div>
 
                 <div className="filter-container">
 

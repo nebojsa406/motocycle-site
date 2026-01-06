@@ -8,7 +8,7 @@ export function GearPage() {
 
             <div className="top-container">
 
-                <div className="page-name"> ACCESSORIES</div>
+                <div className="page-name">GEAR</div>
 
                 <div className="filter-container">
 
