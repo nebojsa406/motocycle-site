@@ -11,7 +11,6 @@ import { CartPage } from "./pages/CartPage";
 import { ItemPage } from "./pages/ItemPage";
 
 import { Header } from './components/Header';
-import { TempFooter } from './components/TempFooter';
 
 
 import { useEffect } from "react";
@@ -51,8 +50,6 @@ function App() {
           <Route path='/cart' element={ <CartPage /> } />
 
         </Routes>
-
-        <TempFooter />
       </BrowserRouter>
     </>
     
