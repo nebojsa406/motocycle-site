@@ -37,7 +37,7 @@ export function Header() {
                     <div className="user-popout">
                         <div className="user-name">Name Surname</div>
                         <Link className="popout-link" to="/user">Profile</Link>
-                        <Link className="popout-link" to="/orders">Orders</Link>
+                        <Link className="popout-link" to="/user">Orders</Link>
                         <Link className="popout-link" to="/logout">Logout</Link>
                     </div>
 
