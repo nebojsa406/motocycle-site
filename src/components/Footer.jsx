@@ -1,11 +1,11 @@
-import "./HomeBlock4.css";
-import logoImg from "../../assets/logo.png";
-import facebookImg from "../../assets/home_block4/facebook-footer-icon.png";
-import instagramImg from "../../assets/home_block4/instagram-footer-icon.png";
-import twitterImg from "../../assets/home_block4/twitter-footer-icon.png";
-import youtubeImg from "../../assets/home_block4/youtube-footer-icon.png";
+import "./Footer.css";
+import logoImg from "../assets/logo.png";
+import facebookImg from "../assets/home_block4/facebook-footer-icon.png";
+import instagramImg from "../assets/home_block4/instagram-footer-icon.png";
+import twitterImg from "../assets/home_block4/twitter-footer-icon.png";
+import youtubeImg from "../assets/home_block4/youtube-footer-icon.png";
 
-export function HomeBlock4() {
+export function Footer() {
     return (
         <div className="Home-Block4">
 

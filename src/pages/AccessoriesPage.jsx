@@ -8,7 +8,7 @@ export function AccessoriesPage() {
 
             <div className="top-container">
 
-                <div className="page-name"> ACCESSORIES</div>
+                <div className="page-name">ACCESSORIES</div>
 
                 <div className="filter-container">
 
@@ -35,6 +35,8 @@ export function AccessoriesPage() {
                 ))}
 
             </div>
+
+            
 
         </div>
     )

@@ -4,10 +4,10 @@ body{
     margin-top: 80px;
     font-family: Arial;
     background: radial-gradient(
-  ellipse at center top,
-  #141c21 0%,
-  #0a0f13 35%,
-  #040608 65%,
-  #010203 100%
-);
+      ellipse at center top,
+      #141c21 0%,
+      #0a0f13 35%,
+      #040608 65%,
+      #010203 100%
+    );
 }
