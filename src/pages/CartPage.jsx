@@ -1,5 +1,6 @@
 import "./CartPage.css"
 import lockImg from "../assets/lock-icon.png";
+import {ItemCart} from "../components/ItemCart";
 
 export function CartPage() {
     return (
@@ -13,6 +14,11 @@ export function CartPage() {
                         <p className="items-container-header-section-2">Quantity</p>
                         <p className="items-container-header-section-3">Price</p>
                     </div>
+
+                    <div className="item-cart-inner-container">
+                        <ItemCart/>
+                    </div>
+                    
 
                 </div>
 
