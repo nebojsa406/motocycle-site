@@ -16,6 +16,7 @@ import { Header } from './components/Header';
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Footer } from "./components/Footer.jsx";
+import { CheckoutPage } from "./pages/CheckoutPage.jsx";
 
 
 function ScrollToTop() {
@@ -50,6 +51,8 @@ function App() {
 
           <Route path='/user' element={ <UserPage /> } />
           <Route path='/cart' element={ <CartPage /> } />
+
+          <Route path='/cart/checkout'  element={ <CheckoutPage /> } />
 
         </Routes>
 

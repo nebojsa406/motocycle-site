@@ -141,16 +141,23 @@
     align-items: center;
 }
 .proceed-btn {
-    width: 80%;
-    height: 45px;
+    width: 50%;
+    height: 25px;
+    min-width: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     font-size: 15px;
-    letter-spacing: 0.16em;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    text-align: center;
+    
 
 
     margin-top: 20px;
     margin-bottom: 25px;
-    align-self: flex-start;
 
     padding: 12px 36px;
     border-radius: 4px;

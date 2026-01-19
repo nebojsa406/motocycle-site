@@ -1,6 +1,7 @@
 import "./CartPage.css"
 import lockImg from "../assets/lock-icon.png";
-import {ItemCart} from "../components/ItemCart";
+import {ItemCart} from "../components/ItemCart.jsx";
+import { Link } from "react-router-dom";
 
 export function CartPage() {
     return (
@@ -32,7 +33,7 @@ export function CartPage() {
                         </div>
                         
                         <div className="proceed-btn-txt-container">
-                            <button className="proceed-btn">Proceed to Checkout</button>
+                            <Link className="proceed-btn" to="/cart/checkout">Proceed to Checkout</Link>
                             <p className="proceed-txt">Shipping and tax calculated at checkout</p>
                         </div>
                     </div>

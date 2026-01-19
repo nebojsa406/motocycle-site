@@ -1,7 +1,7 @@
 import "./ItemCart.css";
 import cartImg1 from "../assets/accessories_category/accessories-cardo.png";
 
-export default function ItemCart( {cartImg, itemName, price} ) {
+export function ItemCart( {cartImg, itemName, price} ) {
     return (
         <div className="item-cart-div">
             <div className="cart-div-1">
